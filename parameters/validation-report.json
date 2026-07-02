@@ -1,0 +1,21 @@
+{
+  "curve": "MyCurve",
+  "equation": "a*x^2 + y^2 = 1 + d*x^2*y^2 (mod p)",
+  "checks": {
+    "p_probable_prime": true,
+    "p_is_safe_prime": true,
+    "q_probable_prime": true,
+    "base_point_on_curve": true,
+    "q_times_base_is_identity": true,
+    "declared_order_within_hasse_interval": true
+  },
+  "derived": {
+    "safe_prime_factor": "57128804919772205011883578552279306937513494529740916433518353547245865174729",
+    "declared_group_order_h_times_q": "114257609839544410023767157104558613874635088047557194090804357636860062750648",
+    "trace_if_declared_order_is_exact": "391901011924638776232349457631667598812",
+    "a_legendre_symbol": -1,
+    "d_legendre_symbol": -1,
+    "complete_affine_formula_sufficient_condition": false
+  },
+  "warning": "qG=O proves that G has order dividing q, but an independent point count is required to prove #E(Fp)=h*q. The standard sufficient condition for complete twisted-Edwards addition (a square, d nonsquare) is not satisfied by the current custom parameters."
+}

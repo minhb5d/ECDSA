@@ -25,3 +25,5 @@ domain-separated hash construction, exact counter sequence, rejection rules,
 point derivation method, point-counting transcript, software versions, and a
 script that reproduces every final parameter from the seed.
 
+
+The repository now includes generation policy v1 and tooling for future parameters. See PARAMETER_GENERATION.md. This improves future reproducibility but does not manufacture missing provenance for the historical curve.

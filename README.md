@@ -33,6 +33,7 @@ docs/             Methodology, security limits, and reproduction guide
 notebooks/        Original exploratory notebook
 paper/            Original report artifact
 scripts/          Plot generation
+tools/            Parameter generation and validation
 ```
 
 ## Quick start
@@ -43,6 +44,7 @@ Python validation and benchmark:
 python src/python/eddsa_reference.py
 python src/python/benchmark.py --trials 100 --output results/python-latest.csv
 python -m unittest discover -s tests -v
+python tools/validate_parameters.py
 ```
 
 C++17 benchmark (Boost.Multiprecision is header-only):
@@ -104,6 +106,7 @@ fully verifiably random or as having a complete nothing-up-my-sleeve proof.
 - [Benchmark methodology](docs/BENCHMARK_METHODOLOGY.md)
 - [Side-channel analysis](docs/SIDE_CHANNELS.md)
 - [Parameter provenance](docs/PARAMETER_PROVENANCE.md)
+- [Reproducible parameter generation](docs/PARAMETER_GENERATION.md)
 - [Results interpretation](docs/RESULTS.md)
 - [Reproduction guide](docs/REPRODUCIBILITY.md)
 

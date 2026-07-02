@@ -1,0 +1,14 @@
+{
+  "algorithm": "custom-eddsa-safe-prime-v1",
+  "hash": "SHA-512",
+  "seed_utf8": "Custom EdDSA Twisted Edwards Research 2026-07-02 v1",
+  "counter": 2037,
+  "bits": 256,
+  "p": "104948263697938047417626596159710631029269956033755068772264621375223729362539",
+  "safe_prime_factor": "52474131848969023708813298079855315514634978016877534386132310687611864681269",
+  "checks": {
+    "p_probable_prime": true,
+    "factor_probable_prime": true,
+    "p_equals_2q_plus_1": true
+  }
+}

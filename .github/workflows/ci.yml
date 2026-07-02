@@ -10,7 +10,7 @@ jobs:
           python-version: "3.12"
       - name: Python tests
         run: |
-          python -m py_compile src/python/*.py tests/*.py scripts/*.py
+          python -m py_compile src/python/*.py tests/*.py scripts/*.py tools/*.py
           python -m unittest discover -s tests -v
       - name: Build C++17 benchmark
         run: |

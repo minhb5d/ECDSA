@@ -56,3 +56,5 @@ Validation should include dudect-style timing tests, known-answer tests,
 invalid-point and low-order-point tests, sanitizers, compiler/version matrices,
 and independent cryptographic review.
 
+
+The historical parameters do not satisfy the common sufficient condition for complete Twisted Edwards addition ( square and d nonsquare). The affine formulas must not be assumed exception-free; see the validation report and parameter-generation documentation.
