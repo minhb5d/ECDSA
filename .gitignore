@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+build/
+cmake-build-*/
+*.exe
+*.out
+*.o
+*.obj
+.DS_Store
+
+
+results/python-smoke.csv
+results/scalar-multiplication-comparison.png

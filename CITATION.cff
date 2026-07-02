@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these research artifacts, please cite this repository."
+title: "Custom EdDSA-Style Twisted Edwards Research Artifacts"
+type: software
+authors:
+  - name: "Minh B5D"
+year: 2026
+license: MIT
+version: 0.1.0
+

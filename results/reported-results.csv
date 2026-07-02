@@ -1,0 +1,6 @@
+runtime,curve,trials,average_seconds,minimum_seconds,maximum_seconds,provenance
+Python,MyCurve,,0.1003544,0.0943864,0.1370574,Values reported in the original study table
+Python,Ed25519,,0.0982963,0.0924462,0.1092304,Values reported in the original study table
+C++17,MyCurve,100,0.0151267,0.0125334,0.0212813,Values supplied by the study author
+C++17,Ed25519,100,0.0148832,0.0116208,0.0219940,Values supplied by the study author
+

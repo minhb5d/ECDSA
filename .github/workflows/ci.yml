@@ -1,0 +1,21 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Python tests
+        run: |
+          python -m py_compile src/python/*.py tests/*.py scripts/*.py
+          python -m unittest discover -s tests -v
+      - name: Build C++17 benchmark
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libboost-dev
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build --config Release
+          ./build/eddsa_benchmark 1
